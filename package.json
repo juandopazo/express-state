@@ -43,6 +43,17 @@
   "dependencies": {
     "serialize-javascript": "~1.0.0"
   },
+  "yahoo": {
+    "bugzilla": {
+      "product": "a",
+      "component": "a"
+    },
+    "custodian": {
+      "name": "Juan Dopazo",
+      "email": "jdopazo@yahoo-inc.com"
+    },
+    "screwdriver": {}
+  },
   "devDependencies": {
     "benchmark": "~1.0.0",
     "chai": "~1.10.0",
@@ -55,6 +66,7 @@
   },
   "yhint": {
     "node": true,
+    "json": false,
     "excludes": [
       "test/fixtures/"
     ]
