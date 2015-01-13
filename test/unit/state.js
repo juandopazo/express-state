@@ -1,8 +1,7 @@
 /* global describe, it, beforeEach, afterEach */
 'use strict';
 
-var expressUtils = require('express/lib/utils'),
-    expect       = require('chai').expect,
+var expect       = require('chai').expect,
     express      = require('express'),
 
     state = require('../../');

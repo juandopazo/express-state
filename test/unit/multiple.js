@@ -28,8 +28,7 @@ describe('multiple', function () {
 
     describe('.extend( app )', function () {
         it('should add `expose()`', function () {
-            var express = require('express'),
-                state   = require('../../'),
+            var state   = require('../../'),
                 app     = {response: {}};
 
             state.extend(app);

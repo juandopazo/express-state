@@ -15,7 +15,7 @@ app.expose({
     flickr_api: 'asdf'
 });
 
-app.get('/', function (req, res, next) {
+app.get('/', function (req, res) {
     res.expose({
         user      : {id: '1234'},
         flickr_api: 'fdsa'
@@ -26,7 +26,7 @@ app.get('/', function (req, res, next) {
     res.render('index');
 });
 
-app.get('/foo', function (req, res, next) {
+app.get('/foo', function (req, res) {
     res.expose({
         user: {id: '1234'}
     });

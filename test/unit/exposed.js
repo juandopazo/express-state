@@ -1,4 +1,4 @@
-/* global describe, it, beforeEach, afterEach */
+/* global describe, it, beforeEach */
 'use strict';
 
 var Exposed = require('../../lib/exposed'),
@@ -9,7 +9,9 @@ describe('Exposed', function () {
 
     beforeEach(function () {
         window      = {};
+        /*jshint evil: true*/
         evalExposed = function (exposed) { eval(String(exposed)); }.bind(window);
+        /*jshint evil: false*/
     });
 
     it('should be a function', function () {

@@ -53,6 +53,12 @@
     "xunit-file": "*",
     "benchmark": "~1.0.0"
   },
+  "yhint": {
+    "node": true,
+    "excludes": [
+      "test/fixtures/"
+    ]
+  },
   "scripts": {
     "test": "istanbul cover -- ./node_modules/mocha/bin/_mocha test/unit/ --reporter spec",
     "benchmark": "node test/benchmark/serialize.js"
